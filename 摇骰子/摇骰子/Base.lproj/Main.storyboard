@@ -15,34 +15,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="t5M-NX-fBd">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diceeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="GGX-qA-xKe">
+                                <rect key="frame" x="109" y="96" width="196" height="128"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="diceeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="GGX-qA-xKe">
-                                <rect key="frame" x="87" y="96" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="1Rs-wN-rP6">
+                                <rect key="frame" x="285" y="398" width="100" height="100"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="bJV-h9-i9q">
-                                <rect key="frame" x="20" y="349" width="140" height="140"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="1Rs-wN-rP6">
-                                <rect key="frame" x="254" y="349" width="140" height="140"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="055-2E-8u8">
-                                <rect key="frame" x="139" y="636" width="135" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="055-2E-8u8">
+                                <rect key="frame" x="158.5" y="636" width="97" height="71"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="kP3-w9-muc"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <state key="normal" title="Dice"/>
                                 <connections>
                                     <action selector="dcie:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7wR-LN-Co2"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="bJV-h9-i9q">
+                                <rect key="frame" x="20" y="398" width="100" height="100"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="t5M-NX-fBd">
+                                <rect key="frame" x="-15" y="0.0" width="444" height="896"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="t5M-NX-fBd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0Me-MM-dxJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="055-2E-8u8" secondAttribute="bottom" constant="155" id="1hY-N8-7pX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1Rs-wN-rP6" secondAttribute="trailing" constant="29" id="BAi-dv-Z0x"/>
+                            <constraint firstItem="1Rs-wN-rP6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="D5Z-b5-3Ne"/>
+                            <constraint firstItem="t5M-NX-fBd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-44" id="DlW-28-Sel"/>
+                            <constraint firstItem="t5M-NX-fBd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-35" id="FhH-Zo-hep"/>
+                            <constraint firstItem="bJV-h9-i9q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Gfl-ja-Izs"/>
+                            <constraint firstItem="055-2E-8u8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K3u-ut-qJs"/>
+                            <constraint firstItem="t5M-NX-fBd" firstAttribute="centerY" secondItem="bJV-h9-i9q" secondAttribute="centerY" id="L8X-sV-6Yh"/>
+                            <constraint firstItem="bJV-h9-i9q" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="daD-Wa-dLx"/>
+                            <constraint firstItem="GGX-qA-xKe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="52" id="n8F-cE-jMq"/>
+                            <constraint firstItem="GGX-qA-xKe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qga-ZN-nA1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -52,7 +64,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="254" y="134"/>
+            <point key="canvasLocation" x="253.62318840579712" y="133.92857142857142"/>
         </scene>
     </scenes>
     <resources>
