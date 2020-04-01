@@ -13,16 +13,21 @@ class ViewController: UIViewController {
     @IBOutlet weak var diceView: UIImageView!
     @IBOutlet weak var diceView2: UIImageView!
     @IBAction func dcie(_ sender: UIButton) {
+        updateDice()
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+       updateDice()
+    }
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        updateDice()
+    }
+    func updateDice() {
         let dice = Int.random(in: 1...6)
         let dice2 = Int.random(in: 1...6)
         diceView.image = UIImage(named: "dice\(dice)")
         diceView2.image = UIImage(named: "dice\(dice2)")
     }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
 
 }
 
